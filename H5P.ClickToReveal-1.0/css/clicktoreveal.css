@@ -1,0 +1,310 @@
+.h5p-clicktoreveal .h5p-clicktoreveal-title p:first-child,
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text-area p:first-child {
+  margin-top: 0;
+}
+.h5p-clicktoreveal .h5p-clicktoreveal-title  p:last-child,
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text-area p:last-child {
+  margin-bottom: 0;
+}
+
+.h5p-clicktoreveal {
+  overflow: hidden;
+  position: relative;
+  padding: 1em;
+}
+
+.h5p-no-frame .h5p-clicktoreveal .h5p-clicktoreveal-title,
+.h5p-transparent .h5p-clicktoreveal .h5p-clicktoreveal-title {
+  padding: 0 0 0.375em 0;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-title {
+  padding: 1em 1em 0.375em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-title-inner {
+  font-size: 1.125em;
+}
+
+.h5p-no-frame .h5p-clicktoreveal .h5p-clicktoreveal-description,
+.h5p-transparent .h5p-clicktoreveal .h5p-clicktoreveal-description {
+  margin: 0 0 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-description {
+  margin: 0 1em 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-description > p {
+  margin: 0;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-footer {
+  margin: auto;
+  overflow: hidden;
+  line-height: 2.35em;
+  padding: 1em;
+  max-width: 32em;
+  position: relative;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-cardwrap {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  visibility: hidden;
+  height: inherit;
+
+  /* -webkit-transition: visibility 0s 0.3s, left 300ms;
+  transition: visibility 0s 0.3s, left 300ms; */
+}
+.h5p-clicktoreveal .h5p-clicktoreveal-cardwrap.h5p-clicktoreveal-current {
+  visibility: visible;
+  left: 0;
+
+  /*-webkit-transition: left 300ms;
+  transition: left 300ms;*/
+}
+.h5p-clicktoreveal .h5p-clicktoreveal-cardwrap.h5p-clicktoreveal-previous {
+  /*left: -100%;*/
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-cardholder {
+  margin: auto;
+  text-align: center;
+  max-width: 32em;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-content {
+  background: #FFF;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.30);
+  /*padding: 1em;*/
+  padding: 0.5em;
+}
+
+/* .h5p-clicktoreveal .h5p-clicktoreveal-card-footer {
+  height: 2.25em;
+  height: 2.25em;
+} */
+
+.h5p-clicktoreveal .h5p-clicktoreveal-image-wrapper {
+  position: relative;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-image-wrapper > .h5p-clicktoreveal-image {
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-thumbnailimage-wrapper > .h5p-clicktoreveal-thumbnailimage {
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.h5p-clicktoreveal .h5p-audio-inner.hide {
+  display: none;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 12em;
+  text-align: center;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-audio-wrapper {
+  display: block;
+  margin: 0 auto;
+  vertical-align: baseline;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-audio-wrapper.hide {
+  display: none;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text-inner {
+  position: relative;
+  height: calc(100% - 2.25em);
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text-inner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text {
+  display: inline-block;
+  margin: 0.5em 0;
+  height: 4.5em;
+  line-height: 1.5;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-card-text.hide {
+  display: none;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-collapse {
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-endcomment {
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+  margin: 0em 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-middle {
+  display: table-cell;
+}
+.h5p-clicktoreveal .h5p-clicktoreveal-left {
+  text-align: left;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-progress {
+  color: #999;
+  text-align: center;
+}
+
+.h5p-clicktoreveal .h5p-joubelui-button.h5p-clicktoreveal-turn {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-turn:before {
+  font-family: 'H5PFontAwesome4';
+  content: "\f021";
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-footer-button {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-prev {
+  left: 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-prev:before {
+  font-family: 'H5PFontAwesome4';
+  content: "\f053";
+  margin-right: 0.2em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-next {
+  right: 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-retry {
+  right: 1em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-retry:before {
+  font-family: 'H5PFontAwesome4';
+  content: "\f01e";
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-next:after {
+  font-family: 'H5PFontAwesome4';
+  content: "\f054";
+  margin-left: 0.2em;
+}
+
+.h5p-clicktoreveal .joubel-tip-container {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-cardwrap-set {
+  margin: auto;
+  text-align: center;
+  max-width: 32em;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-disabled {
+  display: none;
+}
+
+/* Audio button styling */
+/*TODO: Make Audio use JoubelUI button */
+.h5p-clicktoreveal .h5p-audio-minimal-button {
+  border: none;
+  background: #1a73d9;
+  font-weight: normal;
+  padding: 0;
+  font-size: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+.h5p-clicktoreveal .h5p-audio-minimal-button:before {
+  font-size: 0.8em;
+  vertical-align: bottom;
+}
+
+.h5p-clicktoreveal .h5p-audio-minimal-button.h5p-audio-minimal-pause:before {
+  font-size: 0.6em;
+}
+
+.h5p-clicktoreveal .h5p-audio-minimal-button:focus,
+.h5p-clicktoreveal .h5p-audio-minimal-button:hover {
+  background: #1356a3;
+}
+
+.h5p-joubelui-button:active {
+  background: #104888;
+
+  -webkit-box-shadow: inset 0 4px 0 #0e407a;
+  -moz-box-shadow: inset 0 4px 0 #0e407a;
+  box-shadow: inset 0 4px 0 #0e407a;
+}
+
+.h5p-course-presentation .h5p-element .h5p-clicktoreveal-outer-element .h5p-element-inner.h5p-clicktoreveal {
+  overflow-y: hidden;
+}
+
+.h5p-clicktoreveal .h5p-clicktoreveal-thumbnail-content,
+
+.h5p-clicktoreveal .h5p-clicktoreveal-thumbnailimage-wrapper {
+  /*height:auto !important;*/
+  width: 62px;
+  height: 62px !important;
+}
+.h5p-clicktoreveal .h5p-clicktoreveal-thumbnailwrap {
+  display: inline-block;
+  padding: 5px;
+}

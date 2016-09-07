@@ -1,0 +1,106 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "widget": "html",
+    "label": "Title",
+    "tags": ["p", "br", "strong", "em"]
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "widget": "html",
+    "label": "Task description",
+    "default": "Click to reveal more information about the card clicked.",
+    "tags": ["p", "br", "strong", "em", "ul", "li", "ol", "dl", "dt", "sup", "u"]
+  },
+  {
+    "name": "cards",
+    "type": "list",
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "label": "Cards",
+    "entity": "card",
+    "min": 1,
+    "defaultNum": 1,
+    "field": {
+      "name": "information",
+      "type": "group",
+      "label": "Information",
+      "fields": [
+        {
+          "name": "thumbnail_image",
+          "type": "image",
+          "label": "Thumbnail Image",
+          "optional": false,
+          "description": "The thumbnail image that reveals more information about itself when clicked"
+        },
+		{
+		  "name": "media",
+		  "type": "group",
+		  "label": "Media",
+		  "fields": [
+			{
+				"name": "type",
+				"type": "library",
+				"label": "Type",
+				"options": [
+				  "H5P.Image 1.0",
+				  "H5P.Video 1.2"
+				],
+				"optional": true,
+				"description": "The larger media that is revealed when the thumbnail image is clicked."
+			}
+		  ]
+		},
+		{
+          "name": "text",
+          "type": "text",
+		  "widget": "html",
+		  "enterMode": "p",
+		  "tags": [
+			"strong",
+			"em",
+			"sub",
+			"sup",
+			"h2",
+			"h3",
+			"br",
+			"ul",
+			"ol",
+			"li",
+			"dt",
+			"dd"
+		  ],
+          "label": "Textual Information",
+          "description": "Textual information to provide when the thumbnail image is clicked"
+        },
+        {
+          "name": "tips",
+          "type": "group",
+          "label": "Tips",
+          "fields": [
+            {
+              "name": "front",
+              "type": "text",
+              "label": "Tip",
+              "optional": true,
+              "description": "Tip for the thumbnail image"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "retry",
+    "type": "text",
+    "label": "Text for the retry button",
+    "default": "Retry",
+    "common": true
+  }
+]
