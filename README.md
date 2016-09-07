@@ -5,6 +5,16 @@ Makes it possible to create click-to-reveal learning tasks for your site visitor
 
 This is heavily borrowed from 'H5P.Dialogcards-1.2' library.
 
+This content type allows users to upload thumbnail images along with their corresponding enlarged media and some text accompanying it.
+
+Whenever a thumbnail image is clicked, its corresponding enlarged media and the text is shown.
+
+The CSS is identical to Dialogcards content type with minor changes.
+
+TODO: Handle responsiveness and show a carousel when more thumbnail images are added (similar to an image gallery).
+
+Please note that translations are not yet supported and this content type also lacks theming.
+
 Credits: Joubel AS
 
 ## License
